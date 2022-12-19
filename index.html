@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- MY CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css"/>
+
+    <!-- MY FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet" />
+
+    <!-- FONT ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Prima IT Solution</title>
+  </head>
+  <body>
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="./logo_primits.png" alt="error_image" style="width: 12rem; height: 2rem" /></a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" onclick="hamburger()">
+          <span class=""><img style="width: 3rem; height: 3rem"src="./images/icons/burger.png" alt=""></span>
+        </button>
+        <div class="collapse navbar-collapse" id="burger">
+          <ul class="navbar-nav mx-auto me-1">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home" onmouseover="this.style.color = 'green' " onmouseout="this.style.color = '#2a2a2a'">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#articles" onmouseover="this.style.color = 'green' " onmouseout="this.style.color = '#2a2a2a'">Articles</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#services" onmouseover="this.style.color = 'green' " onmouseout="this.style.color = '#2a2a2a'">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#contact" onmouseover="this.style.color = 'green' " onmouseout="this.style.color = '#2a2a2a'">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- <div id="menu_toggle" class="menu_toggle">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Articles</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div> -->
+    </nav>
+    <div id="home" style="background-image: url('./images/hero1.jpg')" class="jumbotron jumbotron-fluid"></div>
+    <div id="headline" class="headline">
+      <p class="fs-4">Let us do the work, so you can focus on what matters</p>
+    </div>
+    <div id="floating" class="floating">
+      <div class="wrapper_floating">
+        <div class="icon_floating">
+          <a id="btn_floating" href="https://wa.me/6282111574780"><img src="./images/icons/Whatsapp.png" alt=""></a>
+        </div>
+      </div>
+    </div>
+    <!-- articles -->
+    <div id="articles" class="container d-lg-flex flex-column justify-content-center align-items-center text-center my-5" >
+      <h5 class="p-4 text-uppercase fs-5 my-4">Articles</h5>
+      <div class="d-lg-flex justify-content-center align-items-center">
+        <div id="card_content" class="card border-0 me-lg-4 mb-lg-0 mb-4" data-aos="fade-down" data-aos-duration="1000">
+          <div class="backgroundEffect"></div>
+          <div class="pic">
+            <img class="" src="./images/blog/dns.jpg" alt="" />
+            <div class="date"><span class="day">15</span> <span class="month">February</span> <span class="year">2022</span></div>
+          </div>
+          <div id="content" class="content">
+            <p class="h-1 mt-3">Apa itu DNS? Mengenal lebih dengan DNS</p>
+            <p class="text-muted mt-3">The Domain Name System is the hierarchical and decentralized naming system used to identify computers, services, and other resources reachable through the Internet</p>
+            <div class="d-flex align-items-center justify-content-evenly mt-4">
+              <div class="btn btn-primary">Read More</div>
+            </div>
+          </div>
+        </div>
+        <div id="card_content" class="card border-0 me-lg-4 mb-lg-0 mb-4" data-aos="fade-down" data-aos-duration="1000">
+          <div class="backgroundEffect"></div>
+          <div class="pic">
+            <img class="" src="./images/blog/server.jpg" alt="" />
+            <div class="date"><span class="day">20</span> <span class="month">Desember</span> <span class="year">2021</span></div>
+          </div>
+          <div id="content" class="content">
+            <p class="h-1 mt-3">Yuk mengenal lebih dalam tentang server!</p>
+            <p class="text-muted mt-3">In computing, a server is a piece of computer hardware or software that provides functionality for other programs or devices, called "clients".</p>
+            <div class="d-flex align-items-center justify-content-evenly mt-4">
+              <div class="btn btn-primary">Read More</div>
+            </div>
+          </div>
+        </div>
+        <div id="card_content" class="card border-0 me-lg-4 mb-lg-0 mb-4" data-aos="fade-down" data-aos-duration="1000">
+          <div class="backgroundEffect"></div>
+          <div class="pic">
+            <img class="" src="./images/blog/router.jpg" alt="" />
+            <div class="date"><span class="day">3</span> <span class="month">July</span> <span class="year">2019</span></div>
+          </div>
+          <div id="content" class="content">
+            <p class="h-1 mt-3">Jenis-jenis router terbaik</p>
+            <p class="text-muted mt-3">A router is a networking device that forwards data packets between computer networks. Routers perform the traffic directing functions on the Internet.</p>
+            <div class="d-flex align-items-center justify-content-evenly mt-4">
+              <div class="btn btn-primary">Read More</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- services -->
+    <section id="services" class="d-lg-flex flex-column justify-content-center align-items-center ">
+      <div class="container text-center my-5">
+        <div class="row mb-3">
+          <div class="col">
+            <h2 class="fs-5">OUR SERVICES</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center py-5 ms-auto">
+          <div id="wrapper_services" class="col-md-3 p-2" data-aos="fade-down" data-aos-duration="1000">
+            <div id="services_content" class="card-content shadow rounded-3 mx-3">
+              <img src="./images/icons/poor.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div id="wrapper_services" class="col-md-3 p-2" data-aos="fade-down" data-aos-duration="1000">
+            <div id="services_content" class="card-content shadow rounded-3 mx-3">
+              <img src="./images/icons/development.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div id="wrapper_services" class="col-md-3 p-2" data-aos="fade-down" data-aos-duration="1000">
+            <div id="services_content" class="card-content shadow rounded-3 mx-3">
+              <img src="./images/icons/maintenance.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="row justify-content-center mt-4 ms-auto">
+        </div> -->
+      </div>
+    </section>
+    <!-- AKHIR SERVICES -->
+    <!-- AWAL BENEFITS -->
+    <!-- <section id="benefits" class="benefits">
+      <div class="container">
+        <div class="row">
+          <div class="col-4">
+            <img src="img/benefits.jpg" alt="" />
+          </div>
+          <div class="col-8 p-4 mt-1">
+            <h3 class="mb-4">Benefits</h3>
+            <li>Relieve the Burden of Your IT Department.</li>
+            <li>Complete Critical Projects.</li>
+            <li>Learn From the Experts.</li>
+            <li>Implement IT into Your Business Strategy.</li>
+            <li>Revitalize Your IT System.</li>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- AKHIR BENEFITS -->
+    <!-- client -->
+    <div id="parallax" class="parallax-slide mt-5">
+      <section class="client text-center">
+        <h2 class="fs-5">Our Beloved Clients</h2>
+        <div class="container text-center p-5">
+          <img src="./images/client/client1.png" alt="Our clients" />
+          <img src="./images/client/client2.png" alt="Our clients" />
+          <img src="./images/client/client3.png" alt="Our clients" />
+          <img src="./images/client/client4.png" alt="Our clients" />
+        </div>
+      </section>
+    </div>
+    <!-- contact -->
+    <footer id="contact" >
+      <div class="container-fluid">
+        <div id="wrapper_contact" class="row pt-3">
+          <div id="section_contact" class="col-6 px-4 py-5">
+            <div id="sosial_contact" class="footer-social-icons">
+              <ul class="social-icons mb-5">
+                <li class="me-2">
+                  <a href="" class="social-icon"> <i class="fa fa-facebook"></i></a>
+                </li>
+                <li class="me-2">
+                  <a href="" class="social-icon"> <i class="fa fa-twitter"></i></a>
+                </li>
+                <li class="me-2">
+                  <a href="" class="social-icon"> <i class="fa fa-rss"></i></a>
+                </li class="me-2">
+                <li>
+                  <a href="" class="social-icon"> <i class="fa fa-github"></i></a>
+                </li>
+              </ul>
+              <h5 style="color: #fff;" class="text-uppercase mb-4 fs-6">Contact Us</h5>
+              <div style="display: flex; flex-direction: row; align-items: center" class="icon_contact">
+                <img style="width: 20px; height: 20px" src="./images/icons/phone.png" alt="" class="me-3"><p style="color: #fff;" class="my-2">0821 2545 3639</p>
+              </div>
+              <div style="display: flex; flex-direction: row; align-items: center" class="icon_contact">
+                <img style="width: 20px; height: 20px" src="./images/icons/phone.png" alt="" class="me-3"><p style="color: #fff;" class="my-2">021 2246 3047</p>
+              </div>
+              <div style="display: flex; flex-direction: row; align-items: center" class="icon_contact">
+                <img style="width: 20px; height: 20px" src="./images/icons/email.png" alt="" class="me-3"><p style="color: #fff;"class="my-2">primaitsolution@prima.com</p>
+              </div>
+            </div>
+          </div>  
+          <div id="section_contact" class="col-6 p-5 ">
+            <div class="row mx-auto">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247.85347315458756!2d106.92127650499073!3d-6.308900392635662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6992b0fe943e93%3A0xaef848c68a169147!2sJl.%20Melati%203%20No.24%2C%20RT.4%2FRW.005%2C%20Jatiwarna%2C%20Kec.%20Pd.%20Melati%2C%20Kota%20Bks%2C%20Jawa%20Barat%2017415!5e0!3m2!1sid!2sid!4v1671385552032!5m2!1sid!2sid" width="420" height="280" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="row pt-4 ps-2">
+            <div style="display: flex; flex-direction: row;" class="icon_location">
+            <img style="width: 2rem; height: 2rem;" src="./images/icons/location.png" alt="" class="me-3"><p style="color: #fff;" >Jl. Melati 3 No.24, RT.4/RW.005, Jatiwarna, Kec. Pd. Melati, Kota Bks, Jawa Barat 17415</p>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div id="section_footer" class="row" style="background-color: #121616">
+          <p class="p-4 text-secondary text-center">2022 © Copyright, Prima IT Solution</p>
+        </div>
+      </div>
+    </footer>
+    <!-- AKHIR FOOTER -->
+    <!-- ANIMATION -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- TRANSPARENT NAVBAR -->
+    <script>
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          document.getElementById("navbar").style.boxShadow = "0 0 15px rgba(0, 0, 0, .1)";
+
+          document.getElementById("navbar").style.background = "rgba(255, 255, 255, 1)";
+        } else {
+          document.getElementById("navbar").style.background = "none";
+
+          document.getElementById("navbar").style.boxShadow = "none";
+        }
+      }
+    </script>
+
+    <!-- PARALLAX -->
+    <script>
+      $(document).ready(function () {
+        // Find the initial scroll top when the page is loaded.
+        var initScrollTop = $(window).scrollTop();
+
+        // Set the image's vertical background position based on the scroll top when the page is loaded.
+        $(parallax1).css({
+          "background-position-y": initScrollTop / 75 + "%",
+        });
+
+        // When the user scrolls...
+        $(window).scroll(function () {
+          // Find the new scroll top.
+          var scrollTop = $(window).scrollTop();
+
+          // Set the new background position.
+          $(parallax1).css({
+            "background-position-y": scrollTop / 75 + "%",
+          });
+        });
+      });
+    </script>
+    <script src="./assets/js/scroll.js"></script>
+    <script src="./assets/js/javascript.js"></script>
+
+  </body>
+</html>
